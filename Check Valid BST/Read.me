@@ -1,0 +1,17 @@
+Coding Question:
+
+Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+
+A valid BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+LeetCode link: https://leetcode.com/problems/validate-binary-search-tree/
+
+Explanation:
+
+Main condition -->  if(checkValidity(root.left, left, root) &&  checkValidity(root.right, root, right))
+By this condition we are defining the minimum and maximum value of the subtrees.
+Check the code to understand the answer. Try to imagine the flow and try to find how we are defining the left and right limits of the subtrees.
